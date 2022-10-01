@@ -25,5 +25,7 @@ public class HelloControllerTest {
         mvc.perform(get("/hello")) // 5.
                 .andExpect(status().isOk()) // 6.
                 .andExpect(content().string(hello)); // 7.
+
+        // test in mac 401 error
     }
 }
